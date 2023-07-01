@@ -1,0 +1,12 @@
+{
+    "name": "dray",
+    "description": "Raycasting engine for D",
+    "authors": [
+        "Timur Gafarov"
+    ],
+    "copyright": "Copyright © 2023, Timur Gafarov",
+    "license": "BSL-1.0",
+    "dependencies": {
+        "dlib": "~>1.2.0"
+    }
+}
