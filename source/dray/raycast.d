@@ -47,9 +47,9 @@ struct CastResult
 }
 
 bool rayVsShape(
+    Shape shape,
     Vector3f rayStart,
     Vector3f rayDir,
-    Shape shape,
     float maxCastDistance,
     out CastResult res)
 {   
@@ -151,12 +151,12 @@ bool rayVsShape(
 }
 
 bool rayVsShape(
-    Ray ray,
     Shape shape,
+    Ray ray,
     float maxCastDistance,
     out CastResult res)
 {
     Vector3f rayStart = ray.p0;
     Vector3f rayDir = (ray.p1 - ray.p0).normalized;
-    return rayVsConvexShape(shape, rayStart, rayDir, maxCastDistance, res);
+    return rayVsShape(shape, rayStart, rayDir, maxCastDistance, res);
 }
