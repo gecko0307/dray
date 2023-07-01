@@ -2,11 +2,6 @@
 *.o
 *.obj
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
 # Compiled Static libraries
 *.a
 *.lib
@@ -14,11 +9,24 @@
 # Executables
 *.exe
 
-# DUB
+# Dub files
 .dub
+dub.selections.json
+
+# Dub test files
+__test__library__
+tests/
+
+# Documentation
+docs/
 docs.json
 __dummy.html
-docs/
 
-# Code coverage
+# Coverage files
 *.lst
+
+# Debug info
+*.pdb
+
+# Backup files
+*~
